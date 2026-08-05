@@ -48,7 +48,7 @@
     <div class="container-fluid bg-light sticky-top p-0">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
             <a href="index.html" class="navbar-brand bg-primary py-4 px-5 me-0">
-                <h1 class="mb-0"><i class="bi bi-scissors"></i>Scentora by HM</h1>
+                <h1 class="mb-0"><i></i>Scentora by HM</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -97,40 +97,47 @@
         <div class="container">
             <div class="text-center wow fadeIn" data-wow-delay="0.1s">
                 <h1 class="font-dancing-script text-primary">Contact</h1>
-                <h1 class="mb-5">Have Any Query? Contact Us</h1>
+                <h1 class="mb-5">Place your order!</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <h4 class="text-center lh-base mb-4"> <a href="https://htmlcodex.com/downloading/?item=3597"></a> </h4>
                     <div class="wow fadeIn" data-wow-delay="0.3s">
-                        <form>
+                        <form action="https://scentorabyhm2-production.up.railway.app/order" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" name="name"  placeholder=" Your Name">
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <iv class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <input type="tel" class="form-control" id="phone"  name="phone" placeholder="Your Contact Number">
+                                        <label for="email">Your Contact Number</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="city" name="city" placeholder="City">
+                                        <label for="subject">City</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="Perfume_name" name="product" placeholder="Perfume name ">
+                                        <label for="subject">Perfume Name</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                        <label for="message">Message</label>
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="address" style="height: 150px"></textarea>
+                                        <label for="Address">Address</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3 ms-0" type="submit">SEND MESSAGE</button>
+                                    <button class="btn btn-primary w-100 py-3 ms-0" type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -152,8 +159,8 @@
                     </a>
                     <p></p>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i>North Karachi</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>03332208427</p>
-                    <p><i class="fa fa-envelope me-2"></i>hira.khan@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>03320039883</p>
+                    <p><i class="fa fa-envelope me-2"></i>scentorabyhm@gmail.com</p>
                     <div class="d-flex justify-content-start mt-4">
                         
                         <a class="btn btn-sm-square btn-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
